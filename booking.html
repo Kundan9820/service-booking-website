@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>ServiceBookingPro</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="booking-form">
+    <h2>Book Your Service</h2>
+    <form id="bookingForm">
+      <label>Full Name</label>
+      <input type="text" id="txt" required>
+
+      <label>Email</label>
+      <input type="email" id="mail" required>
+
+      <label>Service Type</label>
+      <select required id="select">
+        <option value="">Select a service</option>
+        <option>DJ</option>
+        <option>Camera</option>
+        <option>Spa</option>
+        <option>Barber</option>
+        <option>Tent</option>
+      </select>
+
+      <label>Date</label>
+      <input type="date" required>
+
+      <label>Message</label>
+      <textarea rows="4"></textarea>
+
+      <button type="submit" class="btn" onclick="display()">Submit Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ServiceBookingPro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
